@@ -1,11 +1,5 @@
-import React from 'react'
-import Card from './Components/Card'
+import React from "react";
 
 export default function App() {
-
-  return (
-    <>
-      <Card />
-    </>
-  )
+	return <></>;
 }
