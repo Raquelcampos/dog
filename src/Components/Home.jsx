@@ -1,18 +1,23 @@
-import React,{useState} from 'react';
-import axios from 'axios';
+import React from "react";
+import Card from "./Card/Card";
+import Title from "./Title";
+import styled from "styled-components";
 
-export default function Home(){
-    const[dog,setDog]=useState()
+const Main = styled.main`
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+`;
 
-    const btn=() => {
-        axios.get("https://dog.ceo/api/breeds/image/random").then(response => {
-      setDog(response.data.message)
-    })
-    }
-    
-    return(
-        <>
-        <button onClick={() => {btn()}}>Clique aqui</button>
-        </>
-    )
+export default function Home() {
+	return (
+		<Main>
+			<Title />
+			<Card />
+		</Main>
+	);
 }

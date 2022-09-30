@@ -1,11 +1,12 @@
-import React from 'react'
-import Card from './Components/Card'
+import React from "react";
+import Home from "./Components/Home";
+import { GlobalStyle } from "./GlobalStyle";
 
 export default function App() {
-
-  return (
-    <>
-      <Card />
-    </>
-  )
+	return (
+		<>
+			<GlobalStyle />
+			<Home />
+		</>
+	);
 }
